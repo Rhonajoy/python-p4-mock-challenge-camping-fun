@@ -13,7 +13,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    fetch("/campers")
+    fetch("http://localhost:5555/campers")
       .then((r) => r.json())
       .then(setCampers);
   }, []);

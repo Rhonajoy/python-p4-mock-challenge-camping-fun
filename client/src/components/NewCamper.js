@@ -11,7 +11,7 @@ function NewCamper({ onAddCamper }) {
       name,
       age: Number(age),
     };
-    fetch("/campers", {
+    fetch("http://127.0.0.1:5555/campers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
